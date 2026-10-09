@@ -6,6 +6,15 @@ import streamlit as st
 # Leer los datos del archivo CSV
 car_data = pd.read_csv('vehicles_us.csv')
 
+st.title("Exploración de la base de datos de vehículos usados")
+st.subheader("Proyecto del Sprint 7")
+
+st.write(
+    "El código está alojado en este [repositorio](https://github.com/naibafomsare/sprint7) de GitHub.")
+
+st.divider()  # Draws the horizontal line
+
+st.write('Seleccione la opción deseada:')
 
 # crear una casilla de verificación
 build_histogram = st.checkbox('Construir un histograma')
